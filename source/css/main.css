@@ -701,9 +701,7 @@ th {
   margin-right: auto;
   margin-left: auto;
   padding-left: 15px;
-  padding-right: 15px;
-  background: red;
-  height: 120px; }
+  padding-right: 15px; }
   #wrapper:before, #wrapper:after {
     content: " ";
     display: table; }
@@ -711,16 +709,13 @@ th {
     clear: both; }
   #wrapper article {
     margin-left: -15px;
-    margin-right: -15px;
-    height: 80px;
-    background: green; }
+    margin-right: -15px; }
     #wrapper article:before, #wrapper article:after {
       content: " ";
       display: table; }
     #wrapper article:after {
       clear: both; }
     #wrapper article .example {
-      background: yellow;
       position: relative;
       min-height: 1px;
       padding-left: 15px;

@@ -12,19 +12,11 @@ $enable-grid-classes:       false;
 #wrapper{
     @include container-fixed();
     
-    background: red;
-    height: 120px;
-    
     article{
         @include make-row();
-        
-        height: 80px;
-        background: green;
-        
-        
-        .example{
-            background: yellow;
             
+        .example{
+
             @include make-sm-column(12);                    
             @include make-md-column(8);
             @include make-lg-column(4); 

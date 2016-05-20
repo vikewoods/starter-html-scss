@@ -9,6 +9,12 @@ $enable-grid-classes:       false;
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss';
 
 
+header,
+footer{
+    @include container-fixed();
+}
+
+
 #wrapper{
     @include container-fixed();
     

@@ -2,30 +2,149 @@
 
 $enable-flex:               false;
 $enable-grid-classes:       false;
+$grid-gutter-width: 0;
 
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_variables.scss';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_mixins.scss';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_normalize.scss';
 @import '../../bower_components/bootstrap-sass/assets/stylesheets/bootstrap/_grid.scss';
 
+@font-face {
+    font-family: 'ApercuPro-Bold';
+    src: url('../assets/assets/fonts/Header/ApercuPro-Bold.eot');
+    src: url('../assets/assets/fonts/Header/ApercuPro-Bold.eot?#iefix') format('embedded-opentype'),
+    url('../assets/assets/fonts/Header/ApercuPro-Bold.woff') format('woff'),
+    url('../assets/assets/fonts/Header/ApercuPro-Bold.ttf')  format('truetype'),
+    url('../assets/assets/fonts/Header/ApercuPro-Bold.svg#svgFontName') format('svg');
+}
+
+@font-face {
+    font-family: 'ApercuPro';
+    src: url('../assets/assets/fonts/Paragraph/ApercuPro.eot');
+    src: url('../assets/assets/fonts/Paragraph/ApercuPro.eot?#iefix') format('embedded-opentype'),
+    url('../assets/assets/fonts/Paragraph/ApercuPro.woff') format('woff'),
+    url('../assets/assets/fonts/Paragraph/ApercuPro.ttf')  format('truetype'),
+    url('../assets/assets/fonts/Paragraph/ApercuPro.svg#svgFontName') format('svg');
+}
 
 header,
 footer{
     @include container-fixed();
 }
 
+header{
+    
+    background: red;
+    
+    #nav{
+        @include make-row();
+        
+        
+        #holder{
+            @include make-lg-column(12);
+            
+            
+            text-align: center;
+            
+            a{
+                margin: 0;
+                padding: 6px 0;
+                
+                display: block;
+                
+                
+                
+                img{
+                    max-width: 80%;
+                }
+            }
+        }
+    }
+}
 
 #wrapper{
     @include container-fixed();
     
+    background: url("../assets/assets/images/background1.jpg") no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    
     article{
         @include make-row();
             
-        .example{
 
-            @include make-sm-column(12);                    
-            @include make-md-column(8);
-            @include make-lg-column(4); 
+        
+        .section-1-1{
+            @include make-lg-column(6);
+            
+            h1,p{
+                padding-left: 15px;
+                padding-right: 15px;
+                
+                color: #fff;
+            }
+            
+            h1{
+                font-family: 'ApercuPro-Bold', sans-serif;
+                font-size: 3.6em;
+            }
+            
+            p{
+                font-family: 'ApercuPro', sans-serif;
+                font-size: 1.4em;
+            }
+        }
+        
+        .section-1-2{
+            @include make-lg-column(6);
+           
+            h2{
+                font-family: 'ApercuPro-Bold', sans-serif;
+                font-size: 1.4em;
+                color: #fff;
+                
+                border-bottom: 4px solid #fff;
+                
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                
+                margin: 0;
+            }
+            
+            p{
+                font-family: 'ApercuPro', sans-serif;
+                font-size: 1em;
+                color: #fff;
+                
+                padding-left: 15px;
+                padding-right: 15px;
+                padding-top: 15px;
+                padding-bottom: 15px;
+                
+                margin: 0;
+            }
+            
+            .destn-holder{
+                @include make-row();
+                margin-top: 40px;
+                margin-bottom: 40px;
+            }
+            
+            .destn{
+                
+                @include make-xs-column(6);
+                @include make-md-column(6);
+                @include make-lg-column(4);
+            }
+            
+            .destn-in-holder{
+                background: red;
+                margin: 15px;
+            }
         }
     }
 }

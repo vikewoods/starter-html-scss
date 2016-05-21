@@ -180,8 +180,8 @@ th {
 .container {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 0;
+  padding-right: 0; }
   .container:before, .container:after {
     content: " ";
     display: table; }
@@ -189,19 +189,19 @@ th {
     clear: both; }
   @media (min-width: 768px) {
     .container {
-      width: 750px; } }
+      width: 720px; } }
   @media (min-width: 992px) {
     .container {
-      width: 970px; } }
+      width: 940px; } }
   @media (min-width: 1200px) {
     .container {
-      width: 1170px; } }
+      width: 1140px; } }
 
 .container-fluid {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 0;
+  padding-right: 0; }
   .container-fluid:before, .container-fluid:after {
     content: " ";
     display: table; }
@@ -209,8 +209,8 @@ th {
     clear: both; }
 
 .row {
-  margin-left: -15px;
-  margin-right: -15px; }
+  margin-left: 0;
+  margin-right: 0; }
   .row:before, .row:after {
     content: " ";
     display: table; }
@@ -220,8 +220,8 @@ th {
 .col-xs-1, .col-sm-1, .col-md-1, .col-lg-1, .col-xs-2, .col-sm-2, .col-md-2, .col-lg-2, .col-xs-3, .col-sm-3, .col-md-3, .col-lg-3, .col-xs-4, .col-sm-4, .col-md-4, .col-lg-4, .col-xs-5, .col-sm-5, .col-md-5, .col-lg-5, .col-xs-6, .col-sm-6, .col-md-6, .col-lg-6, .col-xs-7, .col-sm-7, .col-md-7, .col-lg-7, .col-xs-8, .col-sm-8, .col-md-8, .col-lg-8, .col-xs-9, .col-sm-9, .col-md-9, .col-lg-9, .col-xs-10, .col-sm-10, .col-md-10, .col-lg-10, .col-xs-11, .col-sm-11, .col-md-11, .col-lg-11, .col-xs-12, .col-sm-12, .col-md-12, .col-lg-12 {
   position: relative;
   min-height: 1px;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 0;
+  padding-right: 0; }
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: left; }
@@ -697,46 +697,161 @@ th {
   .col-lg-offset-12 {
     margin-left: 100%; } }
 
+@font-face {
+  font-family: 'ApercuPro-Bold';
+  src: url("../assets/assets/fonts/Header/ApercuPro-Bold.eot");
+  src: url("../assets/assets/fonts/Header/ApercuPro-Bold.eot?#iefix") format("embedded-opentype"), url("../assets/assets/fonts/Header/ApercuPro-Bold.woff") format("woff"), url("../assets/assets/fonts/Header/ApercuPro-Bold.ttf") format("truetype"), url("../assets/assets/fonts/Header/ApercuPro-Bold.svg#svgFontName") format("svg"); }
+
+@font-face {
+  font-family: 'ApercuPro';
+  src: url("../assets/assets/fonts/Paragraph/ApercuPro.eot");
+  src: url("../assets/assets/fonts/Paragraph/ApercuPro.eot?#iefix") format("embedded-opentype"), url("../assets/assets/fonts/Paragraph/ApercuPro.woff") format("woff"), url("../assets/assets/fonts/Paragraph/ApercuPro.ttf") format("truetype"), url("../assets/assets/fonts/Paragraph/ApercuPro.svg#svgFontName") format("svg"); }
+
+header,
+footer {
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: 0;
+  padding-right: 0; }
+  header:before, header:after,
+  footer:before,
+  footer:after {
+    content: " ";
+    display: table; }
+  header:after,
+  footer:after {
+    clear: both; }
+
+header {
+  background: red; }
+  header #nav {
+    margin-left: 0;
+    margin-right: 0; }
+    header #nav:before, header #nav:after {
+      content: " ";
+      display: table; }
+    header #nav:after {
+      clear: both; }
+    header #nav #holder {
+      position: relative;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0;
+      text-align: center; }
+      @media (min-width: 1200px) {
+        header #nav #holder {
+          float: left;
+          width: 100%; } }
+      header #nav #holder a {
+        margin: 0;
+        padding: 6px 0;
+        display: block; }
+        header #nav #holder a img {
+          max-width: 80%; }
+
 #wrapper {
   margin-right: auto;
   margin-left: auto;
-  padding-left: 15px;
-  padding-right: 15px; }
+  padding-left: 0;
+  padding-right: 0;
+  background: url("../assets/assets/images/background1.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover; }
   #wrapper:before, #wrapper:after {
     content: " ";
     display: table; }
   #wrapper:after {
     clear: both; }
   #wrapper article {
-    margin-left: -15px;
-    margin-right: -15px; }
+    margin-left: 0;
+    margin-right: 0; }
     #wrapper article:before, #wrapper article:after {
       content: " ";
       display: table; }
     #wrapper article:after {
       clear: both; }
-    #wrapper article .example {
+    #wrapper article .section-1-1 {
       position: relative;
       min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px;
-      position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px;
-      position: relative;
-      min-height: 1px;
-      padding-left: 15px;
-      padding-right: 15px; }
-      @media (min-width: 768px) {
-        #wrapper article .example {
-          float: left;
-          width: 100%; } }
-      @media (min-width: 992px) {
-        #wrapper article .example {
-          float: left;
-          width: 66.66667%; } }
+      padding-left: 0;
+      padding-right: 0; }
       @media (min-width: 1200px) {
-        #wrapper article .example {
+        #wrapper article .section-1-1 {
           float: left;
-          width: 33.33333%; } }
+          width: 50%; } }
+      #wrapper article .section-1-1 h1, #wrapper article .section-1-1 p {
+        padding-left: 15px;
+        padding-right: 15px;
+        color: #fff; }
+      #wrapper article .section-1-1 h1 {
+        font-family: 'ApercuPro-Bold', sans-serif;
+        font-size: 3.6em; }
+      #wrapper article .section-1-1 p {
+        font-family: 'ApercuPro', sans-serif;
+        font-size: 1.4em; }
+    #wrapper article .section-1-2 {
+      position: relative;
+      min-height: 1px;
+      padding-left: 0;
+      padding-right: 0; }
+      @media (min-width: 1200px) {
+        #wrapper article .section-1-2 {
+          float: left;
+          width: 50%; } }
+      #wrapper article .section-1-2 h2 {
+        font-family: 'ApercuPro-Bold', sans-serif;
+        font-size: 1.4em;
+        color: #fff;
+        border-bottom: 4px solid #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0; }
+      #wrapper article .section-1-2 p {
+        font-family: 'ApercuPro', sans-serif;
+        font-size: 1em;
+        color: #fff;
+        padding-left: 15px;
+        padding-right: 15px;
+        padding-top: 15px;
+        padding-bottom: 15px;
+        margin: 0; }
+      #wrapper article .section-1-2 .destn-holder {
+        margin-left: 0;
+        margin-right: 0;
+        margin-top: 40px;
+        margin-bottom: 40px; }
+        #wrapper article .section-1-2 .destn-holder:before, #wrapper article .section-1-2 .destn-holder:after {
+          content: " ";
+          display: table; }
+        #wrapper article .section-1-2 .destn-holder:after {
+          clear: both; }
+      #wrapper article .section-1-2 .destn {
+        position: relative;
+        float: left;
+        width: 50%;
+        min-height: 1px;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        min-height: 1px;
+        padding-left: 0;
+        padding-right: 0;
+        position: relative;
+        min-height: 1px;
+        padding-left: 0;
+        padding-right: 0; }
+        @media (min-width: 992px) {
+          #wrapper article .section-1-2 .destn {
+            float: left;
+            width: 50%; } }
+        @media (min-width: 1200px) {
+          #wrapper article .section-1-2 .destn {
+            float: left;
+            width: 33.33333%; } }
+      #wrapper article .section-1-2 .destn-in-holder {
+        background: red;
+        margin: 15px; }
